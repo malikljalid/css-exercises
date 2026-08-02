@@ -10,12 +10,13 @@ html {
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-  gap: 15px;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 12.5% 12.5% 62.5% 12.5%;
+  /* gap: 15px; */
 }
 
 .container div {
+  margin: 8px;
   padding: 15px;
   font-size: 32px;
   font-family: Helvetica;
@@ -27,33 +28,33 @@ html {
 .header {
   background-color: #006157;
   grid-column-start: 1;
-  grid-column-end: 9;
+  grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end:1
+  grid-row-end: 2;
 }
 
 .sidebar {
   background-color: #005B94;
   grid-row-start: 2;
-  grid-row-end: 6 span;
+  grid-row-end: 2 span;
   grid-column-start: 1;
-  grid-column-end: 2 span;
+  grid-column-end: 2;
 }
 
 .nav {
   background-color: #642cde;
-  grid-column: 3 / 9;
+  grid-column: 2 / 3;
   grid-row: 2 / 2;
 }
 
 .article {
   background-color: #7E1DC3;
-  grid-area: 3 / 3 / 8 / 9
+  grid-area: 3 / 2 / 1 span / 3 ;
 }
 
 .footer {
   background-color: #393f4d;
-  grid-area: 8 / 1 / 8 / 9
+  grid-area: 4 / 1 / 1 span / 3 ;
 }
 
 .article p {
