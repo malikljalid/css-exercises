@@ -21,8 +21,7 @@
 
 .header {
   display: grid;
-  column-gap: 260px;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr;
   background-color: #393f4d;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -30,6 +29,7 @@
 
 .header .menu {
   display: grid;
+  align-self: center;
 }
 
 .header .menu ul {
@@ -42,6 +42,7 @@
 .header .logo {
   display: grid;
   align-items: center;
+  justify-self: start;
 }
 
 .nav {
